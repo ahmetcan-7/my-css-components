@@ -1,0 +1,58 @@
+*{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(243, 241, 241);
+        }
+
+        h1{
+            text-align: center;
+            margin: 1rem 0;
+            text-transform: uppercase;
+            color:rgb(58, 58, 58);
+        }
+        .container{
+            width: 53%;
+            margin: auto;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .slide{
+            display: flex;
+            width: 100%;
+        }
+
+        /*btn design*/
+
+        #prevBtn{
+
+            position: absolute;
+            top:50%;
+            z-index:1;
+            left:3%;
+            font-size: 30px;
+            color:white;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        #nextBtn{
+
+            position: absolute;
+            top:50%;
+            z-index:1;
+            right:3%;
+            font-size: 30px;
+            color:white;
+            opacity: 0.8;
+            cursor: pointer;
+            }
+
+        #nextBtn:hover,#prevBtn:hover{
+
+            color:rgb(221, 219, 219);
+        }    
