@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#name{
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: teal;
+    min-height: 12vh;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.links{    
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.links li a{
+    font-size: 20px;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    letter-spacing: 1.5px;
+   
+}
+
+.links li a:hover{
+   background-color: rgb(9, 172, 172);
+}
+
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+   
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px){
+    body{
+        overflow: hidden;
+    }
+
+    .links{
+        background-color: teal;
+        position:absolute;
+        right: 0px;
+        top: 11.9vh;
+        height: 88vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 30%;
+        transform: translateX(100%);
+    }
+    .links li{
+        margin: 10px;
+    }
+   
+
+    .burger{
+        display: block;
+    }
+
+    .nav-active{
+    transform:translateX(0%);
+    transition: all 0.5s ease-in-out;
+    }
+
+    .nav-anime{
+    transition: all 0.5s ease-in-out;
+    }
+
+
+
+}
+
