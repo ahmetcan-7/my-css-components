@@ -24,6 +24,10 @@ var images = [
 ];
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+const getimg = document.querySelector("#image");
+const getlink = document.querySelector("#link");
+const getname = document.querySelector("#header");
+
 let rand = Math.floor(Math.random() * images.length);
 let x = 5;
 setInterval(() => {
@@ -31,10 +35,6 @@ setInterval(() => {
     while (x === rand) {
         rand = Math.floor(Math.random() * images.length);
     }
-
-    const getimg = document.querySelector("#image");
-    const getlink = document.querySelector("#link");
-    const getname = document.querySelector("#header");
 
     getimg.setAttribute("src", images[rand].image);
     getlink.setAttribute("href", images[rand].link);
