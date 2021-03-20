@@ -28,7 +28,11 @@ const getimg = document.querySelector("#image");
 const getlink = document.querySelector("#link");
 const getname = document.querySelector("#header");
 
-let rand = Math.floor(Math.random() * images.length);
+getimg.setAttribute("src", images[3].image);
+getname.innerHTML = images[3].name;
+getlink.setAttribute("href", images[3].link);
+
+let rand = Math.floor(Math.random() * (images.length -1));
 let x = 5;
 setInterval(() => {
 
